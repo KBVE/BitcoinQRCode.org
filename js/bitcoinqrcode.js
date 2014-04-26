@@ -20,7 +20,7 @@
 			'bitcoin-8bit.png',
 			'litecoin-coin.png'
 		];
-
+		this.cryptocoin = '';
 		this.address = '';
 		this.size    = 0;
 
@@ -28,11 +28,15 @@
 			$(this).select();
 		});
 
-		$('#address, #size').on('change blur keyup mouseup', function() {
+		$('#address, #size, #cryptocoin').on('change blur keyup mouseup', function() {
 			var
 				address = $('#address').val(),
+				cryptocoin = $('#cryptocoin').val(),
 				size = Math.min(600, Math.max(100, parseInt($('#size').val())));
-
+			if ( !cryptocoin) {
+				cryptocoin = $('#cryptocoin').attr('placeholder');
+				
+			}
 			if ( !address ) {
 				address = $('#address').attr('placeholder');
 			}
@@ -46,6 +50,7 @@
 
 				self.address = address;
 				self.size    = size;
+				self.cryptocoin = cryptocoin;
 
 				self.update();
 			}
@@ -59,7 +64,7 @@
 			qrcode;
 
 		$('#qrcode').qrcode({
-			text: 'bitcoin:' + this.address,
+			text: this.cryptocoin + ':' + this.address,
 			width: this.pixels * 26,
 			height: this.pixels * 26
 		});

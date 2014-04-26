@@ -18,6 +18,7 @@
 			'bitcoin-coin.png',
 			'bitcoin-logo.png',
 			'bitcoin-8bit.png',
+			'dogecoin-coin.png',
 			'litecoin-coin.png'
 		];
 		this.cryptocoin = '';

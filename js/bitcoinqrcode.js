@@ -29,7 +29,7 @@
 			$(this).select();
 		});
 
-		$('#address, #size, #cryptocoin').on('change blur keyup mouseup', function() {
+		$('#cryptocoin, #address, #size').on('change blur keyup mouseup', function() {
 			var
 				address = $('#address').val(),
 				cryptocoin = $('#cryptocoin').val(),

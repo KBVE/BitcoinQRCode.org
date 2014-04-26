@@ -15,16 +15,21 @@
 	<body>
     <div class="row">
 		<div class="large-12 columns">
-			<h1>Bitcoin QR Code Generator</h1>
+			<h1>Crypto QR Code Generator</h1>
 
 			<p>Click a <a href="http://en.wikipedia.org/wiki/QR_code">QR code</a> to upload it to <a href="http://imgur.com">Imgur</a>. Find out more about <a href="http://bitcoin.org/">Bitcoin</a>.</p>
 
 			<form method="post">
 				<div class="row">
 					<div class="large-9 columns">
-						<label for="address">Bitcoin address:</label>
+						<label for="cryptocoin">Coin:</label>
+
+						<input id="cryptocoin" type="text" placeholder="bitcoin">
+						<br />
+						<label for="address">Address:</label>
 
 						<input id="address" type="text" placeholder="18Vm8AvDr9Bkvij6UfVR7MerCyrz3KS3h4">
+			
 					</div>
 					<div class="large-3 columns">
 						<label for="size">Size (px):</label>
@@ -40,15 +45,14 @@
 
 			<footer>
 				<div id="share">
-					<div class="fb-like" data-href="http://bitcoinqrcode.org/" data-send="false" data-layout="button_count" data-width="105" data-show-faces="false" style="margin-bottom: 4px;"></div>
+					<div class="fb-like" data-href="https://kbve.com/cryptoqrcode/" data-send="false" data-layout="button_count" data-width="105" data-show-faces="false" style="margin-bottom: 4px;"></div>
 
-					<div><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bitcoinqrcode.org/" data-text="#Bitcoin QR Code Generator" data-count="horizontal">Tweet</a></div>
+					<div><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://kbve.com/cryptoqrcode/" data-text="#Crypto QR Code Generator" data-count="horizontal">Tweet</a></div>
 
-					<div class="g-plusone" data-href="http://bitcoinqrcode.org/" data-size="medium" data-count="true"></div>
+					<div class="g-plusone" data-href="https://kbve.com/cryptoqrcode/" data-size="medium" data-count="true"></div>
 				</div>
 
-				By <a href="http://alias.io">Elbert Alias</a>. Donate Bitcoin: 18Vm8AvDr9Bkvij6UfVR7MerCyrz3KS3h4 <em>&mdash; Thanks!</em>
-
+				By KBVE Team Elbert Alias.
 				<br><br>
 
 				<img src="img/donate.png">
@@ -57,7 +61,7 @@
 			<div id="qrcode"></div>
 		</div>
 
-		<a id="fork" href="https://github.com/ElbertF/BitcoinQRCode.org">Fork me on Github</a>
+		<a id="fork" href="">Doge. WoW</a>
 
 		<script src="lib/jquery/jquery-2.0.3.min.js"></script>
 		<script src="lib/jquery-qrcode/src/qrcode.js"></script>
@@ -65,26 +69,12 @@
 		<script src="conf/imgur.js"></script>
 		<script src="js/bitcoinqrcode.js"></script>
 
-		<!-- Piwik -->
-		<script type="text/javascript">
-		  var _paq = _paq || [];
-		  _paq.push(["trackPageView"]);
-		  _paq.push(["enableLinkTracking"]);
-
-		  (function() {
-			var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.alias.io/";
-			_paq.push(["setTrackerUrl", u+"piwik.php"]);
-			_paq.push(["setSiteId", "6"]);
-			var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-			g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-		  })();
-		</script>
-		<!-- End Piwik Code -->
+	
 
 		<!-- Twitter -->
 		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
-		<!-- Google Plus -->
+		<!-- Google Plus 
 		<link href="https://plus.google.com/b/107008529118023432137/" rel="publisher"/>
 
 		<script type="text/javascript">
@@ -103,7 +93,7 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 		})();
 		</script>
-
+		-->
 		<!-- Facebook -->
 		<div id="fb-root"></div>
 
